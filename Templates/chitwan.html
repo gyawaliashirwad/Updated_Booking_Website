@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chitwan- Tourism Website</title>
+    <link rel="stylesheet" href="/static/cities.css" />
+    <link
+      rel="stylesheet"
+      a
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <div class="logo">
+          <img src="/static/images/logo.webp" alt="Tourism Logo" class="logo" />
+        </div>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kathmandu.html">Kathmandu</a></li>
+          <li><a href="pokhara.html">Pokhara</a></li>
+          <li><a href="bhairahawa.html">Bhairahawa</a></li>
+          <li><a href="chitwan.html">Chitwan</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Contact Me</a>
+            <div class="dropdown-content">
+              <a href="mailto:neuankit951@gmail.com">Email Us</a>
+              <a href="tel:+9847134287">Call Now</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="chitwan">
+      <h2>Chitwan</h2>
+      <div class="container-wrapper">
+        <div class="destination-container">
+          <h3>Hotels</h3>
+          <div class="hotel">
+            <h4>Hotel Royal Safari</h4>
+            <img
+              src="/static/images/safari.jpg"
+              alt="Royal_safari"
+              class="destination-image"
+            />
+            <p>Price: $110/night</p>
+
+            <form action="https://formspree.io/f/xnnjwgek" method="POST">
+              <label for="email">Enter Your Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email-royal-safari"
+                required
+                placeholder="Your Email"
+              />
+
+              <label for="date-royal-safari">Select Date:</label>
+              <input type="date" name="date" id="date-royal-safari" required />
+
+              <label for="time-royal-safari">Select Time:</label>
+              <input type="time" name="time" id="time-royal-safari" required />
+
+              <label for="room-type-royal-safari">Type of Room:</label>
+              <select name="room_type" id="room-type-royal-safari" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="single">Single Bed</option>
+                <option value="double">Double Bed</option>
+              </select>
+
+              <label for="rooms-royal-safari">Number of Rooms:</label>
+              <input
+                type="number"
+                name="rooms"
+                id="rooms-royal-safari"
+                min="1"
+                value="1"
+                required
+              />
+
+              <label for="people-royal-safari">Total People:</label>
+              <input
+                type="number"
+                name="people"
+                id="people-royal-safari"
+                min="1"
+                value="1"
+                required
+              />
+
+              <button type="submit">Book Now</button>
+            </form>
+
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/5iEBhRiYEe7GZNQZ6')"
+            >
+              Map
+            </button>
+          </div>
+
+          <div class="hotel">
+            <h4>Chitwan Jungle Lodge</h4>
+            <img
+              src="/static/images/royal.jpg"
+              alt="jungle_lodge"
+              class="destination-image"
+            />
+            <p>Price: $115/night</p>
+
+            <form action="https://formspree.io/f/xnnjwgek" method="POST">
+              <label for="email">Enter Your Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email-jungle-lodge"
+                required
+                placeholder="Your Email"
+              />
+
+              <label for="date-jungle-lodge">Select Date:</label>
+              <input type="date" name="date" id="date-jungle-lodge" required />
+
+              <label for="time-jungle-lodge">Select Time:</label>
+              <input type="time" name="time" id="time-jungle-lodge" required />
+
+              <label for="room-type-jungle-lodge">Type of Room:</label>
+              <select name="room_type" id="room-type-jungle-lodge" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="single">Single Bed</option>
+                <option value="double">Double Bed</option>
+              </select>
+
+              <label for="rooms-jungle-lodge">Number of Rooms:</label>
+              <input
+                type="number"
+                name="rooms"
+                id="rooms-jungle-lodge"
+                min="1"
+                value="1"
+                required
+              />
+
+              <label for="people-jungle-lodge">Total People:</label>
+              <input
+                type="number"
+                name="people"
+                id="people-jungle-lodge"
+                min="1"
+                value="1"
+                required
+              />
+
+              <button type="submit">Book Now</button>
+            </form>
+
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/v6GwNmPPwQJq3Jbs5')"
+            >
+              Map
+            </button>
+          </div>
+        </div>
+        <div class="new-container">
+          <h3>Attractions Near Chitwan</h3>
+          <div class="attraction">
+            <h4>Chitwan National Park</h4>
+            <img
+              src="/static/images/chitwan.webp"
+              alt="Chitwan National Park"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/kgNEqRdA7N5TPLK28')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Jalbire Waterfall</h4>
+            <img
+              src="/static/images/jalbire.png"
+              alt="Jalbire Waterfall"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/xNbuXHQ1iKqV6v8U9')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Crocodile Farm</h4>
+            <img
+              src="/static/images/crocodile.webp"
+              alt="Crocodile Farm"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/QRcTTZ16WP6EBfnL6')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Chepang Hill Trail</h4>
+            <img
+              src="/static/images/chepang.jpg"
+              alt="Chepang Hill Trail"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/Msta9rp97UhNo8ok9')"
+            >
+              Open in Maps
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <img
+          src="/static/images/logo.webp"
+          alt="Tourism Logo"
+          class="footer-logo"
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kathmandu.html">Kathmandu</a></li>
+          <li><a href="pokhara.html">Pokhara</a></li>
+          <li><a href="bhairahawa.html">Bhairahawa</a></li>
+          <li><a href="chitwan.html">Chitwan</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Contact Me</a>
+            <div class="dropdown-content">
+              <a href="mailto:neuankit951@gmail.com">Email Us</a>
+              <a href="tel:+9847134287">Call Now</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <p>&copy; 2023 Your Tourism Website. All Rights Reserved.</p>
+    </footer>
+    <script>
+      function openMap(url) {
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>

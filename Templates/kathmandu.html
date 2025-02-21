@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kathmandu - Tourism Website</title>
+    <link rel="stylesheet" href="/static/cities.css" />
+    <link
+      rel="stylesheet"
+      a
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <div class="logo">
+          <img src="/static/images/logo.webp" alt="Tourism Logo" class="logo" />
+        </div>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kathmandu.html">Kathmandu</a></li>
+          <li><a href="pokhara.html">Pokhara</a></li>
+          <li><a href="bhairahawa.html">Bhairahawa</a></li>
+          <li><a href="chitwan.html">Chitwan</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Contact Me</a>
+            <div class="dropdown-content">
+              <a href="mailto:neuankit951@gmail.com">Email Us</a>
+              <a href="tel:+9847134287">Call Now</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="kathmandu">
+      <h2>Kathmandu</h2>
+      <div class="container-wrapper">
+        <div class="destination-container">
+          <h3>Hotels</h3>
+          <div class="hotel">
+            <h4>Hotel Hyatt</h4>
+            <img
+              src="/static/images/hyatt.jpg"
+              alt="hyatt"
+              class="destination-image"
+            />
+            <p>Price: $100/night</p>
+
+            <form action="https://formspree.io/f/xnnjwgek" method="POST">
+              <label for="email">Enter Your Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email-hyatt"
+                required
+                placeholder="Your Email"
+              />
+
+              <label for="date-hyatt">Select Date:</label>
+              <input type="date" name="date" id="date-hyatt" required />
+
+              <label for="time-hyatt">Select Time:</label>
+              <input type="time" name="time" id="time-hyatt" required />
+
+              <label for="room-type-hyatt">Type of Room:</label>
+              <select name="room_type" id="room-type-hyatt" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="single">Single Bed</option>
+                <option value="double">Double Bed</option>
+              </select>
+
+              <label for="rooms-hyatt">Number of Rooms:</label>
+              <input
+                type="number"
+                name="rooms"
+                id="rooms-hyatt"
+                min="1"
+                value="1"
+                required
+              />
+
+              <label for="people-hyatt">Total People:</label>
+              <input
+                type="number"
+                name="people"
+                id="people-hyatt"
+                min="1"
+                value="1"
+                required
+              />
+
+              <button type="submit">Book Now</button>
+            </form>
+
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/Xr4P4Mt6bEh7WfGW9')"
+            >
+              Map
+            </button>
+          </div>
+
+          <div class="hotel">
+            <h4>Hotel Shanker</h4>
+            <img
+              src="/static/images/shanker.jpg"
+              alt="shanker"
+              class="destination-image"
+            />
+            <p>Price: $110/night</p>
+
+            <form action="https://formspree.io/f/xnnjwgek" method="POST">
+              <label for="email">Enter Your Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email-shanker"
+                required
+                placeholder="Your Email"
+              />
+
+              <label for="date-shanker">Select Date:</label>
+              <input type="date" name="date" id="date-shanker" required />
+
+              <label for="time-shanker">Select Time:</label>
+              <input type="time" name="time" id="time-shanker" required />
+
+              <label for="room-type-shanker">Type of Room:</label>
+              <select name="room_type" id="room-type-shanker" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="single">Single Bed</option>
+                <option value="double">Double Bed</option>
+              </select>
+
+              <label for="rooms-shanker">Number of Rooms:</label>
+              <input
+                type="number"
+                name="rooms"
+                id="rooms-shanker"
+                min="1"
+                value="1"
+                required
+              />
+
+              <label for="people-shanker">Total People:</label>
+              <input
+                type="number"
+                name="people"
+                id="people-shanker"
+                min="1"
+                value="1"
+                required
+              />
+
+              <button type="submit">Book Now</button>
+            </form>
+
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/kZujebULZCi3gedc8')"
+            >
+              Map
+            </button>
+          </div>
+        </div>
+        <div class="new-container">
+          <h3>Attractions</h3>
+          <div class="attraction">
+            <h4>Chandragiri Hills</h4>
+            <img
+              src="/static/images/Chandragiri.webp"
+              alt="Chandragiri"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/eepAZj49R8ze9SsH8')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Swayambhunath Stupa</h4>
+            <img
+              src="/static/images/swayambu.jpg"
+              alt="Swayambhunath Stupa"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/es6BFYRJKY92wATu7')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Pashupatinath Temple</h4>
+            <img
+              src="/static/images/pashupatinath.jpg"
+              alt="Pashupatinath Temple"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/5KDSqfyfp2wpSxRd9')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Boudhanath Stupa</h4>
+            <img
+              src="/static/images/bouddha.avif"
+              alt="Boudhanath Stupa"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/svskwqLcV8UuVrp59')"
+            >
+              Open in Maps
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <img
+          src="/static/images/logo.webp"
+          alt="Tourism Logo"
+          class="footer-logo"
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kathmandu.html">Kathmandu</a></li>
+          <li><a href="pokhara.html">Pokhara</a></li>
+          <li><a href="bhairahawa.html">Bhairahawa</a></li>
+          <li><a href="chitwan.html">Chitwan</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Contact Me</a>
+            <div class="dropdown-content">
+              <a href="mailto:neuankit951@gmail.com">Email Us</a>
+              <a href="tel:+9847134287">Call Now</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <p>&copy; 2023 Your Tourism Website. All Rights Reserved.</p>
+    </footer>
+    <script>
+      function openMap(url) {
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>

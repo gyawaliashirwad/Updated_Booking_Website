@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhairahawa- Tourism Website</title>
+    <link rel="stylesheet" href="/static/cities.css" />
+    <link
+      rel="stylesheet"
+      a
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <div class="logo">
+          <img src="/static/images/logo.webp" alt="Tourism Logo" class="logo" />
+        </div>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kathmandu.html">Kathmandu</a></li>
+          <li><a href="pokhara.html">Pokhara</a></li>
+          <li><a href="bhairahawa.html">Bhairahawa</a></li>
+          <li><a href="chitwan.html">Chitwan</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Contact Me</a>
+            <div class="dropdown-content">
+              <a href="mailto:neuankit951@gmail.com">Email Us</a>
+              <a href="tel:+9847134287">Call Now</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="bhairahawa">
+      <h2>Bhairahawa</h2>
+      <div class="container-wrapper">
+        <div class="destination-container">
+          <h3>Hotels</h3>
+          <div class="hotel">
+            <h4>Tiger Resort</h4>
+            <img
+              src="/static/images/tiger.webp"
+              alt="tiger_resort"
+              class="destination-image"
+            />
+            <p>Price: $90/night</p>
+
+            <form action="https://formspree.io/f/xnnjwgek" method="POST">
+              <label for="email">Enter Your Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email-tiger"
+                required
+                placeholder="Your Email"
+              />
+
+              <label for="date-tiger">Select Date:</label>
+              <input type="date" name="date" id="date-tiger" required />
+
+              <label for="time-tiger">Select Time:</label>
+              <input type="time" name="time" id="time-tiger" required />
+
+              <label for="room-type-tiger">Type of Room:</label>
+              <select name="room_type" id="room-type-tiger" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="single">Single Bed</option>
+                <option value="double">Double Bed</option>
+              </select>
+
+              <label for="rooms-tiger">Number of Rooms:</label>
+              <input
+                type="number"
+                name="rooms"
+                id="rooms-tiger"
+                min="1"
+                value="1"
+                required
+              />
+
+              <label for="people-tiger">Total People:</label>
+              <input
+                type="number"
+                name="people"
+                id="people-tiger"
+                min="1"
+                value="1"
+                required
+              />
+
+              <button type="submit">Book Now</button>
+            </form>
+
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/1MgWQhAhyavF9P4S7')"
+            >
+              Map
+            </button>
+          </div>
+
+          <div class="hotel">
+            <h4>Asian Buddha Hotel</h4>
+            <img
+              src="/static/images/buddha.jpg"
+              alt="siddhartha"
+              class="destination-image"
+            />
+            <p>Price: $95/night</p>
+
+            <form action="https://formspree.io/f/xnnjwgek" method="POST">
+              <label for="email">Enter Your Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email-siddhartha"
+                required
+                placeholder="Your Email"
+              />
+
+              <label for="date-siddhartha">Select Date:</label>
+              <input type="date" name="date" id="date-siddhartha" required />
+
+              <label for="time-siddhartha">Select Time:</label>
+              <input type="time" name="time" id="time-siddhartha" required />
+
+              <label for="room-type-siddhartha">Type of Room:</label>
+              <select name="room_type" id="room-type-siddhartha" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="single">Single Bed</option>
+                <option value="double">Double Bed</option>
+              </select>
+
+              <label for="rooms-siddhartha">Number of Rooms:</label>
+              <input
+                type="number"
+                name="rooms"
+                id="rooms-siddhartha"
+                min="1"
+                value="1"
+                required
+              />
+
+              <label for="people-siddhartha">Total People:</label>
+              <input
+                type="number"
+                name="people"
+                id="people-siddhartha"
+                min="1"
+                value="1"
+                required
+              />
+
+              <button type="submit">Book Now</button>
+            </form>
+
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/EwChTTJa7rG7dXeY6')"
+            >
+              Map
+            </button>
+          </div>
+        </div>
+        <div class="new-container">
+          <h3>Attractions Near Bhairahawa</h3>
+          <div class="attraction">
+            <h4>MayaDevi Temple</h4>
+            <img
+              src="/static/images/lumbini.jpg"
+              alt="Lumbini Temple"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/fkbTqEtfw7pww3ph9')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>SiddhaBaba Temple</h4>
+            <img
+              src="/static/images/siddha.jpg"
+              alt="SiddhaBaba Temple"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/KkhMpUthPSHfrKBx6')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Gangoliya Ostrich Farm</h4>
+            <img
+              src="/static/images/gangoliya.jpg"
+              alt="Gangoliya Ostrich Farm"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/vTidoKTbDqw2DbyP7')"
+            >
+              Open in Maps
+            </button>
+          </div>
+          <div class="attraction">
+            <h4>Fulbari Butwal</h4>
+            <img
+              src="/static/images/fulbari.jpg"
+              alt="Fulbari Butwal"
+              class="attraction-image"
+            />
+            <button
+              class="view-map"
+              onclick="openMap('https://maps.app.goo.gl/mMGQNNCxHRKPZnY29')"
+            >
+              Open in Maps
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <img
+          src="/static/images/logo.webp"
+          alt="Tourism Logo"
+          class="footer-logo"
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kathmandu.html">Kathmandu</a></li>
+          <li><a href="pokhara.html">Pokhara</a></li>
+          <li><a href="bhairahawa.html">Bhairahawa</a></li>
+          <li><a href="chitwan.html">Chitwan</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Contact Me</a>
+            <div class="dropdown-content">
+              <a href="mailto:neuankit951@gmail.com">Email Us</a>
+              <a href="tel:+9847134287">Call Now</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <p>&copy; 2023 Your Tourism Website. All Rights Reserved.</p>
+    </footer>
+    <script>
+      function openMap(url) {
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>
